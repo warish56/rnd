@@ -1,0 +1,39 @@
+.canvas-container{
+    background-color: black;
+}
+
+.gave-over{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    animation: zoomIn 500ms ease forwards;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.bird{
+    object-fit: cover;
+    border: 2px red solid;
+}
+
+@keyframes zoomIn{
+
+    from{
+        transform: scale(0);
+        opacity: 0;
+
+    }
+
+    to{
+        transform: scale(1);
+        opacity: 1;
+
+    }
+}

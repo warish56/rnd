@@ -1,26 +1,57 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useRef, useState, useEffect} from 'react';
+import styles from './Home/Home.module.css'
 import './App.css';
+import RootPage from './Pages/RootPage';
+import store from './Service'
+import CarDetail from './Pages/CarDetail'
+import Snake from './Pages/Snake'
+import FlappyBird from './Pages/FlappyBird'
+import Covid from './Pages/Covid'
+import VideoCall from './Pages/VideoCall'
+import Buffer from './Pages/Buffer'
+import Optimize from './Pages/Optimize'
 
-function App() {
+const usePrevious = (value) => {
+console.log("===updated====",value)
+  const ref = useRef(null);
+
+
+  useEffect(() => {
+    ref.current = value
+    console.log("====setting====",ref.current)
+  })
+
+  return ref.current;
+  
+
+}
+
+const Lipstick = function(target){
+  target.lipsColor="pink"
+}
+
+
+
+class App extends React.Component {
+  
+  constructor(props){
+    super(props);
+    // store.setRefrence(this);
+  }
+
+  // const [counter,updateCounter] = useState(0);
+  // const prev = usePrevious(counter);
+
+  // console.log("====prev===",prev)
+  // const updateCount = () => {
+  //   updateCounter(counter+1)
+  // }
+  render(){
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    <Optimize/>
+  )
+  }
 }
 
 export default App;

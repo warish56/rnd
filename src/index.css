@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gudea&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,7 +8,40 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* --primary-color:#5677f6;
+  --secondary-color:#f7bc5b;
+  --footer-color:#e2ebf1;
+  --text-color:#364d63; */
+
+  --small-text:14px;
+  --medium-text:32px;
+  --large-text:72px;
+
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --dark-color:#343a40;
+
+
+  --small-shadow:0 .125rem .25rem rgba(0,0,0,.075);
+  --large-shadow:0 1rem 3rem rgba(0,0,0,.175);
+  --normal-shadow:0 .5rem 1rem rgba(0,0,0,.15);
 }
+
+@keyframes slideInRight{
+  from{
+      transform: translateX(100%);
+      opacity: 0;
+  }
+
+  to{
+      transform: translateX(0%);
+      opacity: 1;
+  }
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

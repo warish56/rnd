@@ -1,0 +1,135 @@
+
+.video-container{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.video-content{
+    width: 600px;
+    min-height: 500px;
+    height: auto;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+   padding: 10px;
+}
+
+.video-elem{
+    width: 400px;
+    height: 300px;
+
+}
+.input-elem{
+width: auto;
+min-width: 200px;
+height: 40px;
+font-size: 20px;
+border: none;
+border-radius: 5px;
+padding-left: 10px;
+box-shadow:0 .5rem 0.8rem rgba(255,255,255,1.5);
+outline: none;
+}
+
+.self-video-elem{
+    position: fixed;
+    left: 10px;
+    bottom: 10px;
+    width: 200px;
+    height: 150px;
+}
+
+.video-controls-row{
+    width: auto;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-row{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    width: auto;
+    height: auto;
+    overflow: auto;
+
+}
+
+.image-row img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+.video-control-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.video-control-button:focus, .video-control-button:visited, .video-control-button:active{
+animation: bounce ease 0.3s forwards;
+}
+
+.video-control-button:hover{
+box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+}
+
+.active-icon.active-icon{
+    background-color: #4dabf7;
+}
+
+.deactive-icon{
+    background-color: #cd2f2b;
+}
+
+@keyframes bounce{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+.modal-container{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+    background-color: white;
+    width: 500px;
+    height: 400px;
+    text-align: center;
+}

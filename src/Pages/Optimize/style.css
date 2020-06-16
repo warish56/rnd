@@ -1,0 +1,36 @@
+.wall-container{
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+.brick{
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 55px;
+    font-weight: bolder;
+    border: 1px black solid;
+    margin: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.backdrop{
+ position: absolute;
+ top:0;
+ right: 0;
+ left: 0;
+ bottom: 0;
+ background-color: rgba(0,0,0,0.4);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: white;
+}

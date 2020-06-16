@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+.add-container{
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.add-inputs-box{
+    width: auto;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-inputs-box input, url-input{
+    width: 150px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 5px;
+    font-size: 24px;
+}
+
+.add-btn{
+    width: 60px;
+    height: 30px;
+    margin: 0 auto;
+    /* border: none; */
+}
+
+hr{
+    height: 3px;
+    background-color: black;
+    width:80%;
+}
+
+.url-input.url-input{
+    width: 350px;
+}

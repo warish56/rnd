@@ -1,0 +1,291 @@
+
+.container{
+    width: 100%;
+    height: auto;
+}
+
+.content{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.covid_card{
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    flex-flow: column;
+    box-shadow: var(--normal-shadow);
+    margin: 10px 0;
+    position: relative;
+    border: none;
+    outline: none;
+    padding: 0;
+
+}
+
+.covid_card_action_box{
+    flex-basis: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.covid_action_button{
+  width: 100px;
+  height: 50px;
+  /* border-radius: 10px; */
+  border: none;
+  color: black;
+  font-size: 13px;
+  font-weight: bold;
+  transition: all ease 300ms;
+  outline: none;
+
+}
+
+.recovered_bg:hover {
+   background-color: var(--success-color);
+   color: white;
+}
+
+.death_bg:hover{
+    background-color: var(--danger-color);
+    color: white; 
+}
+
+.active_bg:hover{
+    background-color: var(--primary-color);
+    color: white; 
+}
+
+.recovered_bg{
+color: var(--success-color);
+}
+
+.death_bg{
+    color: var(--danger-color);
+
+}
+
+.active_bg{
+    color: var(--primary-color);
+}
+
+.covid_card_graph{
+    flex:1;
+    border: none;
+    outline: none;
+    background-color: white;
+}
+
+.flag_box{
+
+    position: absolute;
+    top:10px;
+    left: 10px;
+    width: 40px;
+    height: 30px;
+    box-shadow: var(--small-shadow);
+
+}
+
+.flag_box_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.info_box_row{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info_box{
+    flex-basis: 30%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    box-shadow: var(--normal-shadow);
+    background-color: white;
+    border-radius: 6px;
+}
+
+.info_box_title{
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.info_box_description{
+    margin-top: 3px;
+    font-size: 35px;
+    color: var(--dark-color);
+}
+
+.desk_svg{
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+}
+
+.modal{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    background-color: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.detail_content{
+    width: 900px;
+    height: 600px;
+    background-color: white;
+    display: flex;
+    padding: 10px;
+    position: relative;
+}
+
+.detail_left{
+    flex-basis: 30%;
+   display: flex;
+   flex-flow: column nowrap;
+   justify-content: space-around;
+   align-items: flex-start;
+   padding-left: 20px;
+}
+
+.detail_right{
+flex:1;
+display: flex;
+flex-direction: column;
+
+justify-content: center;
+align-items: center;
+}
+
+.flag_image_large{
+    width: 200px;
+    height: 150px;
+}
+
+.detail_info_box{
+    width: 100%;
+    flex-basis: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.detail_info_box_title{
+    font-size: 16px;
+    color: var(--secondary-color);
+}
+
+.detail_info_box_description{
+    margin-top: 3px;
+    font-size: 25px;
+}
+
+.slider_box{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_button{
+    width: 100px;
+    height: 40px;
+    margin: 0 10px;
+    font-size: 13px;
+    color: var(--dark-color);
+    outline: none;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.slider_button_active{
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 5px;
+    box-shadow: var(--normal-shadow);
+}
+
+.slider_button_recovered{
+    background-color: var(--success-color);
+    color: white;
+    border-radius: 5px;
+    box-shadow: var(--normal-shadow);
+}
+
+.slider_button_death{
+    background-color: var(--danger-color);
+    color: white;
+    border-radius: 5px;
+    box-shadow: var(--normal-shadow);
+}
+
+.close_box{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    outline: none;
+    border: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.inputRow{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: stretch;
+}
+
+.input_search{
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    color: var(--dark-color);
+    font-size: 15px;
+    transition: all ease 200ms;
+}
+
+.input_search:hover{
+    background-color: var(--dark-color);
+    color: white;
+    cursor: pointer;
+}
+
+.input{
+    flex:1;
+    border:none;
+    box-shadow: 2px 2px 6px #00000012;
+  border: 1px #147ECC48 solid;
+  font-size: var(--small-text);
+  outline: none;
+  padding-left: 15px;
+
+}
